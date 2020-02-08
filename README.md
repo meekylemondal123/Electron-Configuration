@@ -3,4 +3,9 @@ This program can aid the user in finding either the shorthand or longhand electr
 
 This can be done via typing in pip(3) install periodictable
 
+Now you may notice that there seem to be two files, one named electronconfiguration.py and the other named electronconfigurationGUI.py. The first one is a standalone python program, it will run it in the compiler and there no graphical elements. As for the second file, this program comes fit with an easy-going UI filled with buttons, labels and entry widgets. 
+
+Choose whichever one you feel as though would be the best for your needs, and test it out for all of your electron configuration needs! 
+
+
 I hope you enjoy the program!
