@@ -83,8 +83,10 @@ class Decoder:
             
         try:
             for x in self.electron_config_list:
-                self.total_electrons += int(x[2].lstrip())
-               
+                if len(x) == 3:
+                    self.total_electrons += int(x[2].lstrip())
+                elif len(x) == 4:
+                    self.total_electrons += int(x[2].lstrip() + x[3].lstrip())
             for elementNums in pt.elements:
                 if elementNums.number == self.total_electrons:
                     self.element_var.set(elementNums.name.title())
